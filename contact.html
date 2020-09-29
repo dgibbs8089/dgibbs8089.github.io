@@ -5,15 +5,96 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="Description" content="Enter your description here"/>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="Assets/javascript.js"></script>
+<link rel="stylesheet" href="Assets/Style.css">
+
+<!-- Function used to shrink nav bar removing paddings and adding transparent background -->
+    <script>
+            $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+            } else {
+            $('.nav').removeClass('affix');
+            }
+            });
+    </script>
 <title>Title</title>
 </head>
+
 <body>
+
+    <header class="home">
+        <nav class="nav">
+            <div class="container">
+                <div class="logo" id="logo">
+                    <a href="http://127.0.0.1:5500/dgibbs8089.github.io/index.html#">David Gibbens</a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-wrap">
+        <form action="" class="contact-form">
+            <div class="col-sm-6">
+            <div class="input-block">
+                <label for="">First Name</label>
+                <input type="text" class="form-control">
+            </div>
+            </div>
+            <div class="col-sm-6">
+            <div class="input-block">
+                <label for="">Last Name</label>
+                <input type="text" class="form-control">
+            </div>
+            </div>
+            <div class="col-sm-12">
+            <div class="input-block">
+                <label for="">Email</label>
+                <input type="text" class="form-control">
+            </div>
+            </div>
+            <div class="col-sm-12">
+            <div class="input-block">
+                <label for="">Message Subject</label>
+                <input type="text" class="form-control">
+            </div>
+            </div>
+            <div class="col-sm-12">
+            <div class="input-block textarea">
+                <label for="">Drop your message here</label>
+                <textarea rows="3" type="text" class="form-control"></textarea>
+            </div>
+            </div>
+            <div class="col-sm-12">
+            <button class="square-button">Send</button>
+            </div>
+        </form>
+
+    </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
