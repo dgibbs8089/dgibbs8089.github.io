@@ -358,12 +358,6 @@ p {
 //import compass
 @import "compass";
 
-//colors
-$primary-color   : #FF512F;
-$secondary-color : #333;
-$form-bg         : #fff;
-
-
 //contact form
 .contact-form{
     margin-top: 30px;
@@ -445,9 +439,6 @@ $form-bg         : #fff;
     }
 }
 
-
-
-
 /*page style*/
 body{
     @include background-image(linear-gradient(to right, $primary-color, #DD2476));
@@ -478,29 +469,5 @@ h1{
 
 
 
-//follow me template
-.made-with-love{
-    margin-top: 40px;
-    padding: 10px;
-    clear: left;
-    text-align: center;
-    font-size: 10px;
-    font-family: arial;
-    color: #fff;
-    i{
-    font-style: normal;
-    color: #F50057;
-    font-size: 14px;
-    position: relative;
-    top: 2px;
-    }
-    a{
-    color: #fff;
-    text-decoration: none;
-    &:hover{
-    text-decoration: underline;
-    }
-    }
-}
 
 
